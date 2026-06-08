@@ -23,4 +23,5 @@ Then open `http://localhost:8000`.
 
 - Update the resume source from `/Users/zack/Downloads/2026 resume full info.md` when job history changes.
 - Keep the resume PDF filename in sync with the links in `index.html`.
+- `img/starkware-logo.svg` comes from the official StarkWare media kit assets.
 - Bootstrap and Bootstrap Icons are loaded from jsDelivr CDN links in `index.html`.
