@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Zack Williams : Software Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zack Williams is a full-stack software engineer building React Native, TypeScript/NestJS, Ruby on Rails, PostgreSQL, Starknet, and AI-assisted development workflows.">
+  <title>Zack Williams | Software Engineer</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="style.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="bi-lightning-charge"></i>Zack Williams</a>
-      
+      <a class="navbar-brand" href="#top"><i class="bi-lightning-charge"></i>Zack Williams</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Work</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#testimonials">Testimonials</a>
@@ -35,347 +37,242 @@
           </li>
         </ul>
 
-        <!-- <a target='_blank' href='https://www.linkedin.com/in/zackwilldev/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a> -->
-        <!-- <a target='_blank' href='https://calendly.com/zackwilldev/15-min' class='btn btn-primary'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
-        <!-- <a href='./ZackWilliamsResume2024.pdf' class='btn btn-primary'><i class="bi-download"></i> Download Resume</a> -->
-        <a href='mailto:zackwilldev@gmail.com' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a>
+        <div class="d-flex gap-2 flex-column flex-lg-row">
+          <a href="./ZackWilliamsResume2026.pdf" class="btn btn-outline-primary"><i class="bi-download"></i> Resume</a>
+          <a href="mailto:zackwilldev@gmail.com" class="btn btn-primary"><i class="bi-envelope"></i> Email</a>
+        </div>
       </div>
     </div>
   </nav>
 
-  <header class='text-center p-section'>
-    <div class='container-fluid'>
-      <div class='row'>
-        <div class='col-md-6 offset-md-3'>
-          <sup>Meet Zack Williams</sup>
-          <h1>Combining <span class='marker-highlight'>technology</span> and creative <span class='marker-highlight'>problem-solving</span> to positively impact others.</h1>
-          <p class='lead mb-5'>I use technology to connect people and help others reach their full potential.</p>
+  <main id="top">
+    <header class="text-center p-section hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <sup>Meet Zack Williams</sup>
+            <h1>Software engineer building <span class="marker-highlight">maintainable</span> full-stack products with AI-assisted workflows.</h1>
+            <p class="lead mb-5">I ship user-facing features across React Native, TypeScript/NestJS, Ruby on Rails, PostgreSQL, and Starknet systems, using AI generation tools thoughtfully to move faster without losing maintainability.</p>
 
-          <!-- <a target='_blank' href='https://www.linkedin.com/in/zackwilldev/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a> -->
-          <a  target='_blank' href='https://calendly.com/zackwilldev/15-min' class='btn btn-primary'><i class="bi-calendar-event"></i> Schedule a Call</a>
-          <!-- <a href='./ZackWilliamsResume2024.pdf' class='btn btn-primary'><i class="bi-download"></i> Download Resume</a> -->
-          <!-- <a href='mailto:zackwilldev' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a> -->
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id='company' class='p-section'>
-    <div class='container text-center'>
-      <label class='sup mb-3 text-muted'>Employment History</label>
-
-      <div class='row justify-content-center d-flex align-items-center'>
-        <div class='col-2'>
-          <img src="img/flatiron-logo.jpeg" class='px-3'>
-          <p>Flatiron School</p>
-        </div>
-        <div class='col-2'>
-          <img src="img/statype-logo.jpeg" class='px-3'>
-          <p>Statype</p>
-        </div>
-        <div class='col-2'>
-          <img src="img/gannett_logo.jpeg" class='px-3'>
-          <p>Gannett</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id='portfolio' class='p-section bg-light'>
-    <div class='container'>
-      <sup>Portfolio</sup>
-      <h2 class='mb-5 underline'>Featured Work</h2>
-
-      <div class='row mb-5'>
-        <div class='col-sm-4'>
-          <div class='card h-100'>
-            <div class='background-image' style='background-image: url(img/portfolio-endit-movement.png)'>
-              <img src='img/spacer-portrait.png'>
-            </div>
-            <div class='card-body'>
-
-              <h3>END IT Movement</h3>
-              <p class='mb-3'>For 6 years, the team and I worked with END IT Movement to produce the website for their annual 'Shine a Light on Slavery' Day. The site handled 100,000+ visitors w/in 24 hours.</p>
-              
-            </div>
-            <div class='card-footer'>
-              <a href='#' class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a>
-              <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a>
-              <a href='#' class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
-            </div>
-          </div>
-        </div>
-
-        <div class='col-sm-4'>
-          <div class='card h-100'>
-            <div class='background-image' style='background-image: url(img/portfolio-aggregate-law.png)'>
-              <img src='img/spacer-portrait.png'>
-            </div>
-            <div class='card-body'>
-
-              <h3>AggregateLaw</h3>
-              <p class='mb-3'>A marketplace for connecting lawfirms with projects attorneys, we worked on the MVP and Version 1 of their product from strategy, through design, to development.</p>
-              
-
-            </div>
-            <div class='card-footer'>
-              <a href='#' class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a>
-              <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a>
-              <a href='#' class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
-            </div>
-          </div>
-        </div>
-
-        <div class='col-sm-4'>
-          <div class='card h-100'>
-            <div class='background-image' style='background-image: url(img/portfolio-growing-leaders.png)'>
-              <img src='img/spacer-portrait.png'>
-            </div>
-            <div class='card-body'>
-
-              <h3>Habitudes Online</h3>
-              <p class='mb-3'>We brought Growing Leaders into the digital age by cocreating their online content library. Over 6+ years, we've launched multiple products with thousands of active users.</p>
-
-            </div>
-            <div class='card-footer'>
-              <a href='#' class='btn btn-sm btn-light'><i class="bi-github"></i> Code</a>
-              <a href='#' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a>
-              <a href='#' class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a>
+            <div class="d-flex justify-content-center gap-3 flex-column flex-sm-row">
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/zackwilldev/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on LinkedIn</a>
+              <a href="./ZackWilliamsResume2026.pdf" class="btn btn-outline-primary"><i class="bi-download"></i> Download Resume</a>
             </div>
           </div>
         </div>
       </div>
+    </header>
+
+    <section id="company" class="p-section bg-light">
+      <div class="container text-center">
+        <label class="sup mb-4 text-muted">Experience Across</label>
+
+        <div class="row justify-content-center align-items-center g-4 company-grid">
+          <div class="col-6 col-md-3">
+            <div class="company-mark company-mark-text">StarkWare</div>
+            <p>StarkWare</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="img/flatiron-logo.jpeg" alt="Flatiron School logo" class="company-logo">
+            <p>Flatiron School</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="img/statype-logo.jpeg" alt="Statype logo" class="company-logo">
+            <p>Statype</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="img/gannett_logo.jpeg" alt="Gannett logo" class="company-logo">
+            <p>LocaliQ at Gannett</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section> -->
+    </section>
 
-  <section id='about' class='p-section'>
-    <div class='container container-lg'>
-      <sup>About</sup>
-      <h2 class='mb-5 underline'>I am Zack Williams</h2>
+    <section id="about" class="p-section">
+      <div class="container container-lg">
+        <sup>About</sup>
+        <h2 class="mb-5 underline">I am Zack Williams</h2>
 
-      <div class='row flex-row'>
-        <div class='col-sm-4'>
-          <div class='p-3 sticky-top' style='top: 85px;'>
-            <img src="img/headshot.png" class='circle mb-3'>
+        <div class="row flex-row g-4">
+          <div class="col-sm-4">
+            <div class="p-3 sticky-sm-top profile-card">
+              <img src="img/headshot.png" alt="Headshot of Zack Williams" class="circle mb-3">
 
-            <ul class='list-inline mb-0 text-center'>
-              <li class='list-inline-item h4 mb-0 me-3'>
-                <a href='https://www.linkedin.com/in/zackwilldev/' target='_blank' class='text-light'>
-                  <i class="bi-linkedin"></i>
-                </a>
-              </li>
-              <li class='list-inline-item h4 mb-0 me-3'>
-                <a href='https://github.com/zackattax' target='_blank' class=''>
-                  <i class="bi-github"></i>
-                </a>
-              </li>
-              <li class='list-inline-item h4 mb-0 me-3'>
-                <a href='https://www.instagram.com/z_attax/' target='_blank' class='text-light'>
-                  <i class="bi-instagram"></i>
-                </a>
-              </li>
+              <ul class="list-inline mb-0 text-center">
+                <li class="list-inline-item h4 mb-0 me-3">
+                  <a href="https://www.linkedin.com/in/zackwilldev/" target="_blank" rel="noopener" aria-label="Zack Williams on LinkedIn">
+                    <i class="bi-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item h4 mb-0 me-3">
+                  <a href="https://github.com/zackattax" target="_blank" rel="noopener" aria-label="Zack Williams on GitHub">
+                    <i class="bi-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item h4 mb-0 me-3">
+                  <a href="https://www.instagram.com/z_attax/" target="_blank" rel="noopener" aria-label="Zack Williams on Instagram">
+                    <i class="bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <blockquote>Comfortable owning ambiguous problems and learning quickly in emerging technical domains.</blockquote>
+
+            <p class="lead">I am a full-stack engineer with experience building production applications across frontend, backend, and protocol-integrated systems. My work has included React Native applications, market-making tools across frontend/backend/CLI surfaces, Rails SaaS features, Elixir A/B testing, AI-assisted development workflows, and automated test coverage for critical user flows.</p>
+            <p class="lead">I care about clear communication, low-ego collaboration, and software that stays understandable as the product grows.</p>
+
+            <p class="lead mb-2">Favorite tools and domains:</p>
+
+            <ul class="lead tool-list">
+              <li><span class="marker-highlight">TypeScript</span></li>
+              <li>React Native</li>
+              <li>NestJS</li>
+              <li>PostgreSQL</li>
+              <li>Ruby on Rails</li>
+              <li>Elixir</li>
+              <li>Starknet</li>
+              <li>ChatGPT and Codex</li>
+              <li>Cypress and RSpec</li>
             </ul>
-          </div>
-        </div>
-        <div class='col-sm-8'>
-          <blockquote>Actively writing code and learning new technologies.</blockquote>
 
-          <!-- <img src="img/github-activity.png" class='mb-3'> -->
-
-          <p class='lead'>Thought-filled software engineer who understands that deliberate, <span class='marker-highlight'>consistent progress</span> over time is life's greatest growth strategy.</p>
-          <p class='lead'>He strives to make that choice daily and challenges others to do the same.</p>
-          
-          <p class='lead mb-0'>Favorite Tools:</p>
-
-          <ul class='lead'>
-            <li><span class='marker-highlight'>Ruby on Rails</span></li>
-            <li>Elixir</li>
-            <li>Fly.io</li>
-            <li>JavaScript</li>
-          </ul>
-
-          <div class='mt-5'>
-            <a target='_blank' href='https://www.linkedin.com/in/morganjlopes/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
-            <!-- <a  target='_blank' href='https://calendly.com/morganjlopes/call' class='btn btn-primary'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
-            <!-- <a href='#' class='btn btn-primary'><i class="bi-download"></i> Download Resume</a> -->
-            <!-- <a href='mailto:' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a> -->
+            <div class="mt-5 d-flex gap-3 flex-column flex-sm-row">
+              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/zackwilldev/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on LinkedIn</a>
+              <a href="./ZackWilliamsResume2026.pdf" class="btn btn-outline-primary"><i class="bi-download"></i> Download Resume</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id='testimonials' class='p-section'>
-    <div class='container'>
-      <sup>Testimonials</sup>
-      <h2 class='mb-5 underline'>Kind Words<br>from Great People</h2>
+    <section id="experience" class="p-section bg-light">
+      <div class="container container-lg">
+        <sup>Experience</sup>
+        <h2 class="mb-5 underline">Recent Work</h2>
 
-      <div class='row'>
-        <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <!-- <blockquote class='quotation'>“Final product <span class='marker-highlight'>exceeded</span> my expectations”</blockquote> -->
-              <p class='lead'>Working alongside Zack has been one of the greatest pleasures of my software engineering career thus far. Not only is he a good team member, but he approaches complex problems with humility, dedication, and a good sense of humor. 
-                He thinks outside of the box, and is skilled in Ruby on Rails, React, and JavaScript. 
-                Having Zack work along side you is a privilege and he will bring value to any team he is on.</p>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div>
+              <h3>Exploration Software Engineer</h3>
+              <p class="text-muted mb-0">StarkWare | Remote | 08/2024 - Present</p>
             </div>
-            <div class=''>
-              <img src="img/testimonial-elias.jpeg" class='circle testimonial-image'>
-              <h3 class='pt-3'>Elias</h3>
-              <em>Full-stack Developer, American Alpine Club</a></em>
-            </div>
-          </div>
-        </div>
-
-        <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <!-- <blockquote class='quotation'>“Doing great things by helping build strong minds”</blockquote> -->
-              <p class='lead'>Zack is a true testament to the value and drive that an earlier-in-their-career engineer can bring to a team and I’d be excited to work with him again.</p>
-            </div>
-            <div class=''>
-              <img src="img/dave-worth.jpeg" class='circle testimonial-image'>
-              <h3 class='pt-3'>David Worth</h3>
-              <em>Vice President of Engineering, Statype</em>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <blockquote class='quotation'>“Transparent, professional, and good...”</blockquote>
-              <p class='lead'>Great to work with. <span class='marker-highlight'>Transparent</span>, professional, and good at it. I would recommend to anyone.</p>
-            </div>
-            <div class=''>
-              <img src="img/testimonial-jennifer.jpeg" class='circle testimonial-image'>
-              <h3 class='pt-3'>Jennifer</h3>
-              <em>Three Sided Marketplace</em>
-            </div>
-          </div>
-        </div> -->
-      </div>
-
-    </div>
-  </section>
-
-  <!-- <section class='bg-dark text-white section-inverse'>
-    <div class='container'>
-      <div class='bg-primary p-5 card'>
-        <h2 class='mb-5 text-center underline'>Shipping More Than Code</h2>
-        
-        <div class='row'>
-          <div class='col-sm-4'>
-            <h3><i class="bi-pen me-2"></i> Popular Writings</h3>
             <ul>
-              <li>
-                <a target='_blank' href='https://www.morganjlopes.com/annual-reflection-framework/' class='text-white'>Annual Reflection Framework</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://www.morganjlopes.com/bringing-humanity-back-to-email/' class='text-white'>Bringing Humanity Back to Email</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://www.morganjlopes.com/work-life-harmony/' class='text-white'>Work Life Harmony</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://medium.com/tenrocket/web-and-mobile-app-sitemap-643b60b0343e' class='text-white'>Web and Mobile App Sitemap</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://medium.com/polar-notion/building-a-blueprint-for-your-idea-5acad1bfb6b7' class='text-white'>Building a Blueprint for your Idea</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://medium.com/polar-notion/how-to-launch-an-idea-in-1-month-398c54d116b9' class='text-white'>How to Launch an Idea in One Month</a>
-              </li>
+              <li>Built and shipped user-facing React Native features with blockchain-backed state, helping support 322 users within the first two weeks of launch.</li>
+              <li>Contributed to Starknet onboarding and smart contract functionality for an African business integration reaching 230K users.</li>
+              <li>Helped build market-making and trading tooling across frontend, backend, and CLI surfaces using NestJS, PostgreSQL, Prisma, and real-time market data integrations.</li>
             </ul>
-          </div>
-          <div class='col-sm-4'>
-            <h3><i class="bi-megaphone me-2"></i> Podcast Interviews</h3>
+          </article>
+
+          <article class="experience-item">
+            <div>
+              <h3>Technical Coach</h3>
+              <p class="text-muted mb-0">Flatiron School | Remote | 2024</p>
+            </div>
             <ul>
-              <li>
-                <a target='_blank' href='https://podcast.nonprofitmegaphone.com/622294/8188617-morgan-lopes-at-new-story' class='text-white'>Methods and Mindsets with CTO at New Story</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://shrimptankpodcast.com/ep-152-morgan-lopes-process-optimization/' class='text-white'>Process Optimization</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://www.iheart.com/podcast/269-the-second-mile-47831491/episode/1-3-creating-a-successful-human-centered-business-49175425/' class='text-white'>Creating a Human-Centered Business</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://www.audible.com/pd/Using-Tech-for-Good-Podcast/B098PXTJHW' class='text-white'>Using Tech for Good</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://www.audacy.com/podcasts/2-minute-talk-tips-23509/ep-129-medieval-times-to-ceo-with-morgan-lopes-96455297' class='text-white'>From Medieval Times to CEO</a>
-              </li>
+              <li>Provided live technical support to incoming students, helping them unblock setup issues, debug, and build confidence before day one.</li>
             </ul>
-          </div>
-          <div class='col-sm-4'>
-            <h3><i class="bi-tools me-2"></i> Resources</h3>
+          </article>
+
+          <article class="experience-item">
+            <div>
+              <h3>Product Engineer</h3>
+              <p class="text-muted mb-0">Statype | Remote | 05/2023 - 08/2023</p>
+            </div>
             <ul>
-              <li>
-                <a target='_blank' href='https://www.codeschoolguide.com/book/' class='text-white'>Code School Book</a>
-              </li>
-              <li>
-                <a target='_blank' href='http://polarnotion.github.io/turntable/' class='text-white'>Turntable.js</a>
-              </li>
-              <li>
-                <a target='_blank' href='http://polarnotion.github.io/hamsterwheel' class='text-white'>Hamsterwheel.js</a>
-              </li>
-              <li>
-                <a target='_blank' href='http://polarnotion.github.io/scroll-plugin' class='text-white'>Scrollmptious.js</a>
-              </li>
-              <li>
-                <a target='_blank' href='https://polarnotion.github.io/starwarsintro/' class='text-white'>StarWarsIntro.css</a>
-              </li>
+              <li>Resolved a SAML role bug by triaging root causes and adding test coverage, improving reliability in a core authentication flow.</li>
+              <li>Built reusable UI components adopted across the application, improving consistency and reducing duplication for the broader engineering team.</li>
             </ul>
+          </article>
+
+          <article class="experience-item">
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="text-muted mb-0">LocaliQ at Gannett | Remote | 01/2022 - 01/2023</p>
+            </div>
+            <ul>
+              <li>Built an A/B test in Elixir that drove 99% of signups through the higher-performing path within the first month.</li>
+              <li>Led Cypress end-to-end testing work to improve release confidence for critical user flows.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="p-section">
+      <div class="container">
+        <sup>Testimonials</sup>
+        <h2 class="mb-5 underline">Kind Words<br>from Great People</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3 testimonial-card">
+              <p class="lead">Working alongside Zack has been one of the greatest pleasures of my software engineering career thus far. Not only is he a good team member, but he approaches complex problems with humility, dedication, and a good sense of humor. He thinks outside of the box, and is skilled in Ruby on Rails, React, and JavaScript. Having Zack work alongside you is a privilege and he will bring value to any team he is on.</p>
+              <div>
+                <img src="img/testimonial-elias.jpeg" alt="Elias" class="circle testimonial-image">
+                <h3 class="pt-3">Elias</h3>
+                <em>Full-stack Developer, American Alpine Club</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-3 testimonial-card">
+              <p class="lead">Zack is a true testament to the value and drive that an earlier-in-their-career engineer can bring to a team and I would be excited to work with him again.</p>
+              <div>
+                <img src="img/dave-worth.jpeg" alt="David Worth" class="circle testimonial-image">
+                <h3 class="pt-3">David Worth</h3>
+                <em>Vice President of Engineering, Statype</em>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section> -->
+    </section>
 
-  <section id='contact' class='p-section-lg bg-dark text-white'>
-    <div class='container container-lg text-center'>
+    <section id="contact" class="p-section-lg bg-dark text-white">
+      <div class="container container-lg text-center">
+        <sup>Contact</sup>
+        <h2 class="mb-5">Let's Talk</h2>
 
-      <sup>Contact</sup>
-      <h2 class='mb-5'>Let's Talk</h2>
+        <p class="w-sm ms-auto me-auto lead">The best way to get to know each other is a chat. You can set the agenda, or we can start with software, teams, and a few favorite off-screen topics:</p>
 
-      <p class='w-sm ms-auto me-auto lead'>Hey! There is no better way to get to know each other than a chat. You set the agenda or we can start with these talking points:</p>
+        <ul class="list-unstyled lead contact-list">
+          <li>Coffee, especially home roasting</li>
+          <li>Cycling: road and MTB</li>
+          <li>Electronic music: STS9 and Pretty Lights</li>
+          <li>Cocktails: former pro, current hobbyist</li>
+        </ul>
 
-      <ul class='list-unstyled lead'>
-        <li>Coffee (I'm a home roaster!)</li>
-        <li>Cycling(Road MTB Gravel love it all)</li>
-        <li>Electronic Music (STS9 is my fav with Pretty Lights close behind)</li>
-        <li>Cocktails(former pro turned hobbyest) </li>
-      </ul>
-
-      <div class='mt-5'>
-        <a target='_blank' href='https://www.linkedin.com/in/zackwilldev/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
-        <a  target='_blank' href='https://calendly.com/zackwilldev/15-min' class='btn btn-primary'><i class="bi-calendar-event"></i> Schedule a Call</a>
-        <!-- <a href='#' class='btn btn-primary'><i class="bi-download"></i> Download Resume</a> -->
-        <!-- <a href='mailto:' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a> -->
+        <div class="mt-5 d-flex justify-content-center gap-3 flex-column flex-sm-row">
+          <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/zackwilldev/" class="btn btn-primary"><i class="bi-linkedin"></i> Connect on LinkedIn</a>
+          <a target="_blank" rel="noopener" href="https://calendly.com/zackwilldev/15-min" class="btn btn-outline-light"><i class="bi-calendar-event"></i> Schedule a Call</a>
+          <a href="mailto:zackwilldev@gmail.com" class="btn btn-outline-light"><i class="bi-envelope"></i> Send Email</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer class='bg-black p-5 text-white'>
-    <div class='container'>
-      <div class='row'>
-
-        <div class='col-sm-6'>
-          <ul class='list-inline float-end'>
-            <li class='list-inline-item h4 mb-0 me-3'>
-              <a href='https://www.linkedin.com/in/zackwilldev/' target='_blank' class='text-light'>
+  <footer class="bg-black p-5 text-white">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-sm-6">
+          <p class="mb-0">&copy; 2026 Zack Williams</p>
+        </div>
+        <div class="col-sm-6">
+          <ul class="list-inline float-sm-end mb-0">
+            <li class="list-inline-item h4 mb-0 me-3">
+              <a href="https://www.linkedin.com/in/zackwilldev/" target="_blank" rel="noopener" class="text-light" aria-label="Zack Williams on LinkedIn">
                 <i class="bi-linkedin"></i>
               </a>
             </li>
-            <li class='list-inline-item h4 mb-0 me-3'>
-              <a href='https://github.com/zackattax' target='_blank' class='text-light'>
+            <li class="list-inline-item h4 mb-0 me-3">
+              <a href="https://github.com/zackattax" target="_blank" rel="noopener" class="text-light" aria-label="Zack Williams on GitHub">
                 <i class="bi-github"></i>
               </a>
             </li>
-            <li class='list-inline-item h4 mb-0 me-3'>
-              <a href='https://www.instagram.com/z_attax/' target='_blank' class='text-light'>
+            <li class="list-inline-item h4 mb-0 me-3">
+              <a href="https://www.instagram.com/z_attax/" target="_blank" rel="noopener" class="text-light" aria-label="Zack Williams on Instagram">
                 <i class="bi-instagram"></i>
               </a>
             </li>
@@ -385,7 +282,7 @@
     </div>
   </footer>
 
-  <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
     <defs>
       <filter id="marker-shape">
         <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />

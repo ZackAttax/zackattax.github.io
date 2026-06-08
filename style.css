@@ -10,6 +10,7 @@ blockquote {
 
 h1, .h1 {
   font-size: 65px;
+  line-height: 1;
 }
 
 h2, .h2 {
@@ -22,6 +23,7 @@ img {
 
 blockquote {
   font-size: 28px;
+  line-height: 1.2;
 }
 
 sup, .sup {
@@ -82,6 +84,10 @@ header.p-section {
   padding: 160px 0px 120px;
 }
 
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
 .p-section {
   padding: 100px 0px;
 }
@@ -131,6 +137,70 @@ header.p-section {
   margin-right: 25px;
 }
 
+.company-grid p {
+  font-weight: 600;
+  margin: 1rem 0 0;
+}
+
+.company-logo,
+.company-mark {
+  height: 86px;
+  width: 86px;
+  object-fit: contain;
+}
+
+.company-mark {
+  align-items: center;
+  border: 2px solid #111827;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.company-mark-text {
+  color: #111827;
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px;
+}
+
+.profile-card {
+  top: 85px;
+}
+
+.tool-list {
+  columns: 2;
+}
+
+.experience-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.experience-item {
+  border-bottom: 1px solid #dee2e6;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+  padding-bottom: 2rem;
+}
+
+.experience-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-item ul {
+  margin-bottom: 0;
+}
+
+.testimonial-card {
+  height: 100%;
+}
+
+.contact-list li + li {
+  margin-top: .35rem;
+}
+
 .marker-highlight {
   position: relative;
   display: inline-block;
@@ -147,4 +217,36 @@ header.p-section {
   left: -0.05em;
   padding: 0 0.25em;
   bottom: 0.2em;
+}
+
+@media (max-width: 767px) {
+  h1, .h1 {
+    font-size: 42px;
+  }
+
+  h2, .h2 {
+    font-size: 34px;
+  }
+
+  header.p-section {
+    padding: 130px 0px 80px;
+  }
+
+  .p-section,
+  .p-section-lg {
+    padding: 70px 0px;
+  }
+
+  .tool-list {
+    columns: 1;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-image {
+    float: none;
+    margin-bottom: 1rem;
+  }
 }
