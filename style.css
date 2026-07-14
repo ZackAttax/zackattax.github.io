@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-
 html,
 body {
   overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1, .h1,
@@ -11,6 +19,11 @@ h3, .h3,
 h4, .h4,
 blockquote {
   font-family: 'DM Serif Display', serif;
+}
+
+section,
+header {
+  scroll-margin-top: 88px;
 }
 
 h1, .h1 {
@@ -32,10 +45,28 @@ blockquote {
   line-height: 1.2;
 }
 
-sup, .sup {
+.section-kicker {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+.skip-link {
+  background-color: #111827;
+  color: #fff;
+  left: 1rem;
+  padding: .75rem 1rem;
+  position: fixed;
+  top: .75rem;
+  transform: translateY(-150%);
+  transition: transform .15s ease;
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  color: #fff;
+  transform: translateY(0);
 }
 
 .underline::after {
@@ -94,6 +125,12 @@ header.p-section {
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
+.availability {
+  color: #495057;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
 .p-section {
   padding: 80px 0px;
 }
@@ -118,6 +155,7 @@ header.p-section {
   letter-spacing: .15em;
   text-transform: uppercase;
   padding: .65rem 1.5rem;
+  white-space: normal;
 }
 
 .btn-group-lg>.btn, .btn-lg {
@@ -169,6 +207,38 @@ header.p-section {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.selected-work-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.work-item {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  display: grid;
+  gap: .75rem;
+  padding: 1.5rem;
+}
+
+.work-item p {
+  margin-bottom: 0;
+}
+
+.work-meta {
+  color: #6c757d;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.work-note {
+  color: #6c757d;
+  font-size: .95rem;
+  font-style: italic;
 }
 
 .approach-item {
@@ -230,10 +300,15 @@ header.p-section {
 }
 
 @media (max-width: 767px) {
+  .container,
+  .row > * {
+    min-width: 0;
+  }
+
   h1, .h1 {
     font-size: 31px;
     line-height: 1.12;
-    max-width: 340px;
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
     overflow-wrap: break-word;
@@ -254,27 +329,51 @@ header.p-section {
 
   .hero .lead {
     font-size: 1.05rem;
-    max-width: 340px;
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .availability,
+  blockquote,
+  .lead,
+  .work-item,
+  .testimonial-card {
+    overflow-wrap: anywhere;
   }
 
   .hero {
     text-align: left !important;
   }
 
-  .hero .btn {
-    white-space: normal;
+  .hero .d-flex,
+  #about .d-flex,
+  #contact .d-flex {
+    width: 100%;
+  }
+
+  .hero .btn,
+  #about .btn,
+  #contact .btn {
+    max-width: 100%;
     width: 100%;
   }
 
   .company-grid {
     --bs-gutter-x: .75rem;
     --bs-gutter-y: 2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .company-grid > * {
     min-width: 0;
+    padding-left: .375rem;
+    padding-right: .375rem;
+  }
+
+  .company-grid p {
+    overflow-wrap: anywhere;
   }
 
   .company-logo {
@@ -288,6 +387,14 @@ header.p-section {
 
   .approach-grid {
     grid-template-columns: 1fr;
+  }
+
+  .selected-work-grid {
+    gap: 1rem;
+  }
+
+  .work-item {
+    padding: 1.25rem;
   }
 
   .experience-item {
